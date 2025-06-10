@@ -1,0 +1,14 @@
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+  border-left: 1px solid #eee;
+}

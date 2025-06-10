@@ -1,0 +1,12 @@
+.ceo-section {
+  background-color: #e5e5e5; /* Dark gray background */
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0f5bd4;
+}

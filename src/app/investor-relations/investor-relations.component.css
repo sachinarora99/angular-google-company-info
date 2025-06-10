@@ -1,0 +1,10 @@
+.outer-bg {
+  background-color: #e0e0e0; /* Dark grey outer */
+}
+
+.inner-card {
+  background-color: #f5f5f5; /* Light grey card */
+  border-radius: 15px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

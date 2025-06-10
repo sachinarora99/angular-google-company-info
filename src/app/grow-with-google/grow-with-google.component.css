@@ -1,0 +1,9 @@
+.grow-section {
+  background-color: #ffffff;
+}
+
+.grow-img img {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+}
