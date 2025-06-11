@@ -1,6 +1,6 @@
-<!-- 
 
-<nav class="navbar">
+
+ <!-- <nav class="navbar">
   <div class="logo">Google</div>
   <ul class="nav-links">
     <li><a href="#">About</a></li>
@@ -8,9 +8,9 @@
     <li class="active"><a href="#">Company Info</a></li>
     <li><a href="#">News</a></li>
   </ul>
-</nav>
+</nav>  -->
 
- -->
+ 
 
  <!-- <nav class="navbar">
   <div class="logo">Google</div>
@@ -25,8 +25,12 @@
   </ul>
 </nav> -->
 
-<nav class="navbar">
-  <div class="logo">Google</div>
+<!-- <nav class="navbar">
+  <!- <div class="logo">Google</div> -->
+   <!-- <div class="logo">
+  <img src="assets/google-logo.png" alt="Google Logo" />
+</div>
+
 
   <button class="menu-toggle" (click)="toggleMenu()">&#9776;</button>
 
@@ -37,4 +41,41 @@
     <li><a href="#">News</a></li>
   </ul>
 </nav>
+  -->
+
+
+<!-- <nav class="navbar">
+  <div class="logo">
+    <img src="assets/google-logo.png" alt="Google Logo" />
+  </div>
+
+  <button class="menu-toggle" (click)="toggleMenu()">&#9776;</button>
+
+  <ul class="nav-links" [class.show]="isMenuOpen">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li class="active"><a href="#">Company Info</a></li>
+    <li><a href="#">News</a></li>
+  </ul>
+</nav> -->
+
+
+
+<nav class="navbar">
+  <div class="left-section">
+    <div class="logo">
+      <img src="assets/google-logo.png" alt="Google Logo" />
+    </div>
+
+    <ul class="nav-links" [class.show]="isMenuOpen">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li class="active"><a href="#">Company Info</a></li>
+      <li><a href="#">News</a></li>
+    </ul>
+  </div>
+
+  <button class="menu-toggle" (click)="toggleMenu()">&#9776;</button>
+</nav>
+
 

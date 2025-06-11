@@ -1,21 +1,31 @@
-/* Base styles */
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eee;
-  padding: 10px 20px;
+  background-color: white;
+  padding: 15px 30px;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+/* Left section: logo + nav links */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
+/* Logo image size increased */
+.logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Nav links with larger font, not bold */
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -23,19 +33,21 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal; /* no bold */
 }
 
 .nav-links li.active a {
-  font-weight: bold;
+  text-decoration: underline; /* or remove this if not needed */
 }
 
-/* Hamburger button */
+/* Hamburger menu */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 32px;
   cursor: pointer;
 }
 
@@ -49,15 +61,21 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #eee;
-    padding: 10px;
+    top: 70px;
+    left: 20px;
+    background-color: white;
+    padding: 15px;
     border-radius: 8px;
     z-index: 1000;
   }
 
   .nav-links.show {
     display: flex;
+  }
+
+  .left-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
